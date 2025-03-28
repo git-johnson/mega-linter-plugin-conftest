@@ -1,0 +1,27 @@
+descriptor_id: CONFTEST
+descriptor_type: tooling_format
+descriptor_flavors:
+  - all_flavors
+file_extensions:
+  - ".json"
+  - ".yaml"
+  - ".yml"
+  - ".tf"
+  - ".hcl"
+test_folder: conftest
+linters:
+  - linter_name: conftest
+    linter_text: Policy testing with Open Policy Agent
+    linter_url: https://www.conftest.dev
+    linter_repo: https://github.com/open-policy-agent/conftest
+    config_file_name: policy
+    cli_lint_mode: project
+    cli_lint_extra_args:
+      - "test"
+    examples:
+      - "conftest test myfile.yaml"
+    install:
+      dockerfile:
+        - FROM openpolicyagent/conftest:v0.58.0 AS conftest
+        - COPY --from=conftest /usr/local/bin/conftest /usr/bin/
+
