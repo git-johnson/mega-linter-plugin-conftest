@@ -3,11 +3,32 @@ descriptor_type: tooling_format
 descriptor_flavors:
   - all_flavors
 file_extensions:
-  - ".json"
-  - ".yaml"
-  - ".yml"
-  - ".tf"
-  - ".hcl"
+  - ".cue" # CUE
+  - ".cdx.json" # CycloneDX
+  - ".cdx.xml" # CycloneDX
+  - "Dockerfile"
+  - ".dockerfile"
+  - ".edn" # EDN
+  - ".env" # Environment files
+  - ".tf" # HCL
+  - ".hcl" # HCL
+  - ".hcl2" # HCL2
+  - ".conf" # HOCON
+  - ".gitignore" # Ignore files
+  - ".dockerignore" # Ignore files
+  - ".ini" # INI
+  - ".json" # JSON
+  - ".jsonnet" # Jsonnet
+  - ".libsonnet" # Jsonnet
+  - ".properties" # Property files
+  - ".spdx" # SPDX
+  - ".spdx.json" # SPDX
+  - ".textproto" # TextProto
+  - ".toml" # TOML
+  - ".vcl" # VCL
+  - ".xml" # XML
+  - ".yaml" # YAML
+  - ".yml" # YAML
 test_folder: conftest
 linters:
   - linter_name: conftest

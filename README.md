@@ -1,0 +1,1 @@
+# MegaLinter Conftest Plugin
