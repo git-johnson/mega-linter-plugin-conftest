@@ -45,10 +45,9 @@ linters:
       dockerfile:
         - |
           # Install Conftest
-          RUN curl -L -o /tmp/conftest.tar.gz https://github.com/open-policy-agent/conftest/releases/download/v0.58.0/conftest_0.58.0_Darwin_x86_64.tar.gz && \
+          RUN curl -L -o /tmp/conftest.tar.gz https://github.com/open-policy-agent/conftest/releases/download/v0.58.0/conftest_0.58.0_Linux_x86_64.tar.gz && \
               mkdir -p /tmp/conftest && \
               tar -xzf /tmp/conftest.tar.gz -C /tmp/conftest && \
               mv /tmp/conftest/conftest /usr/bin/conftest && \
               chmod +x /usr/bin/conftest && \
               rm -rf /tmp/conftest.tar.gz /tmp/conftest
-
