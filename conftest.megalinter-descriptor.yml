@@ -36,7 +36,7 @@ linters:
     linter_url: https://www.conftest.dev
     linter_repo: https://github.com/open-policy-agent/conftest
     config_file_name: policy
-    cli_lint_mode: project
+    cli_lint_mode: list_of_files
     cli_lint_extra_args:
       - "test"
     examples:
