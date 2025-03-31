@@ -43,6 +43,8 @@ linters:
       - "conftest test myfile.yaml"
     install:
       dockerfile:
-        - FROM openpolicyagent/conftest:v0.58.0 AS conftest
-        - COPY --from=conftest /usr/local/bin/conftest /usr/bin/
+        - |
+          # Install Conftest
+          RUN curl -L -o /usr/bin/conftest https://github.com/open-policy-agent/conftest/releases/download/v0.58.0/conftest_0.58.0_Darwin_x86_64.tar.gz && \
+              chmod +x /usr/bin/conftest
 
