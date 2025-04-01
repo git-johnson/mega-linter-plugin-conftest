@@ -37,7 +37,7 @@ Add this plugin to your MegaLinter configuration:
 
 ```yaml
 PLUGINS:
-  - "https://raw.githubusercontent.com/git-johnson/mega-linter-plugin-conftest/main/conftest.megalinter-descriptor.yml"
+  - "https://raw.githubusercontent.com/gryphonai/mega-linter-plugin-conftest/main/conftest.megalinter-descriptor.yml"
 ```
 
 ### Prerequisites
